@@ -1,4 +1,5 @@
 let calculateResult = document.querySelector("#calculateResult");
+let inputBox = document.querySelectorAll("input");
 
 calculateResult.addEventListener("click", function(){
     let subject1 = Number(document.getElementById("subject1").value);
@@ -19,6 +20,10 @@ calculateResult.addEventListener("click", function(){
     else 
         grade = "D";
 
+    // inputBox.style.borderColor="red";
     document.querySelector("h3").innerText= `Total = ${total} | Average = ${average} | Grade = ${grade}`
-    
+
+    if(!subject1 || !subject2 || !subject3 || !subject4){
+    document.querySelector("#result").innerText="Please Enter marks for all subjects";
+}
 });
