@@ -26,4 +26,12 @@ calculateResult.addEventListener("click", function(){
     if(!subject1 || !subject2 || !subject3 || !subject4){
     document.querySelector("#result").innerText="Please Enter marks for all subjects";
 }
+    if(grade=="A" || grade=="B"){
+        document.querySelector("#status").innerText="PASS!"
+        document.querySelector("#status").style.color="green";
+    }
+    else{
+        document.querySelector("#status").innerText="FAIL! BETTER LUCK NEXT TIME";
+        document.querySelector("#status").style.color="red";
+    }
 });
