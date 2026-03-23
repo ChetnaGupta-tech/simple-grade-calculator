@@ -10,8 +10,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #54457f;
+    margin: 15px;
+    font-size: 50px;
 }
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 80px 300px 80px 300px;
+    padding: 15px;
 
+}
 .form
 {
     display: flex;
@@ -19,4 +32,21 @@
     /* width: 50%; */
     align-items: center;
     justify-content: center;
+}
+input
+{
+    border: 2px solid #b84a62;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+#calculateResult
+{
+    background-color: #ac7b84;
+    border-radius: 20px;
+    padding: 15px;
+    color: rgb(235, 232, 232);
+    border: none;
 }
